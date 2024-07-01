@@ -1,10 +1,10 @@
-Tic-Tac-Toe Game
+Tic-Tac-Toe Game:
 This is a simple console-based implementation of the classic Tic-Tac-Toe game in Java.
 
-Overview
+Overview:
 The program allows two players to play Tic-Tac-Toe on a 3x3 board. Players take turns to input their moves, and the game checks for a win condition after each move. The game ends when a player wins or when the board is full and there is no winner (a draw).
 
-How to Play
+How to Play:
 Start the Game: Run the Main class to start the game.
 Input Moves: Players take turns to input their move. Each move consists of two integers representing the row and column where they want to place their mark (X or O).
 Check for Valid Moves: The program checks if the move is valid (i.e., the chosen cell is empty). If the move is invalid, the player is prompted to try again.
