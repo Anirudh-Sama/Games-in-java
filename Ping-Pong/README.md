@@ -1,18 +1,29 @@
-## Getting Started
+## Pong Game
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is a simple implementation of the classic Pong game using Java. The game features two paddles and a ball, with basic collision detection and scoring.
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## Installation
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. Ensure you have Java installed on your system. You can download it from [here](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+2. Clone or download this repository to your local machine.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## How to Play
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+1. Compile the code using a Java compiler. Open a terminal in the directory containing the files and run:
+    ```sh
+    javac PongGame.java GameFrame.java GamePanel.java Paddle.java Ball.java Score.java
+    ```
+2. Run the game:
+    ```sh
+    java PongGame
+    ```
 
-## Dependency Management
+### Controls
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Player 1 (left paddle): 
+  - `W` to move up
+  - `S` to move down
+- Player 2 (right paddle): 
+  - `UP ARROW` to move up
+  - `DOWN ARROW` to move down
