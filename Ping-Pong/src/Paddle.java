@@ -13,37 +13,64 @@ public class Paddle extends Rectangle{
 
     public void keyPressed(KeyEvent e){
         switch(id){
-            case 1:
-            if(e.getKeyCode() == KeyEvent.VK_W){
-                setYDirection(-speed);
-                move();
+            case 1 -> {
+                if(e.getKeyCode() == KeyEvent.VK_W){
+                    setYDirection(-speed);
+                    move();
+                }
+                if(e.getKeyCode() == KeyEvent.VK_S){
+                    setYDirection(speed);
+                    move();
+                }
+                break;
             }
-            if(e.getKeyCode() == KeyEvent.VK_S){
-                setYDirection(speed);
-                move();
+            case 2 -> {
+                if(e.getKeyCode() == KeyEvent.VK_UP){
+                    setYDirection(-speed);
+                    move();
+                }
+                if(e.getKeyCode() == KeyEvent.VK_DOWN){
+                    setYDirection(speed);
+                    move();
+                }
+                break;
             }
-            case 2:
-            if(e.getKeyCode() == KeyEvent.VK_UP){
-                setYDirection(-speed);
-                move();
-            }
-            if(e.getKeyCode() == KeyEvent.VK_DOWN){
-                setYDirection(speed);
-                move();
-            } 
         }
     }
 
     public void keyReleased(KeyEvent e){
-
+        switch(id){
+            case 1 -> {
+                if(e.getKeyCode() == KeyEvent.VK_W){
+                    setYDirection(-0);
+                    move();
+                }
+                if(e.getKeyCode() == KeyEvent.VK_S){
+                    setYDirection(0);
+                    move();
+                }
+                break;
+            }
+            case 2 -> {
+                if(e.getKeyCode() == KeyEvent.VK_UP){
+                    setYDirection(0);
+                    move();
+                }
+                if(e.getKeyCode() == KeyEvent.VK_DOWN){
+                    setYDirection(0);
+                    move();
+                }
+                break;
+            }
+        }
     }
 
     public void setYDirection (int YDirection){
-
+        yVelocity = YDirection;
     }
 
     public void move(){
-        
+        y = y + yVelocity;
     }
 
     public void draw(Graphics g){
