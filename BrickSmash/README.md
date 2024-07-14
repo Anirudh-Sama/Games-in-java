@@ -1,18 +1,26 @@
-## Getting Started
+## BrickSmash
+BrickSmash is a simple brick-breaking game developed in Java using Swing for the graphical user interface. The player controls a paddle to bounce a ball and break bricks.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Features
+1. Paddle controlled by keyboard
+2. Ball bounces off the paddle, walls, and bricks
+3. Score tracking
+4. Simple graphical display
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+# Requirements
+Java Development Kit (JDK) 8 or higher
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Controls
+1. Right Arrow Key: Move paddle to the right
+2. Left Arrow Key: Move paddle to the left
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+# Game Rules
+1. Use the paddle to keep the ball in play.
+2. Break all the bricks to win the game.
+3. The game ends if the ball falls below the paddle.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Acknowledgements
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Inspired by the classic brick-breaking game genre.
+2. Developed using Java and Swing.
