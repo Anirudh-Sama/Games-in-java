@@ -1,5 +1,14 @@
+
+import javax.swing.JFrame;
+
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        int boardWidth = 600;
+        int boardHeight = boardWidth;
+
+        JFrame frame = new JFrame("Snakes");
+        frame.setVisible(true);
+        frame.setSize(boardWidth, boardHeight);
     }
 }
